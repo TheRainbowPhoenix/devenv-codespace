@@ -28,4 +28,7 @@ RUN echo "export SDK_DIR=${SDK_DIR}" >> ~/.bashrc
 RUN echo "export OLD_SDK_DIR=${OLD_SDK_DIR}" >> ~/.bashrc
 # RUN cd /tmp && /tmp/setup.sh && rm -rf /tmp/setup.sh
 
+# To fallback on the older sdk version, build project with 
+# SDK_DIR=$OLD_SDK_DIR make hhk
+
 # USER gitpod
